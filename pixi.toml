@@ -1,5 +1,5 @@
 [workspace]
-authors = ["Bornik Nag <borniknag@gmail.com>"]
+authors = ["BN <bnag@purdue.edu>"]
 channels = ["conda-forge"]
 name = "interpretability-benchmark"
 platforms = ["linux-64"]
