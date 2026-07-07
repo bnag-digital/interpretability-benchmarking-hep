@@ -8,16 +8,15 @@ attention-based architectures) trained on HEP tagging datasets.
 
 ```
 interpretability-benchmarking-hep/
-├── data/loader.py                  # fetch_openml wrapper with column-order verification
+├── data/loader.py                  # fetch_openml wrapper
 ├── models/bdt.py                   # XGBClassifier wrapper with early stopping
 ├── models/dnn.py                   # JetDNN + training loop
-├── explainers/shap_explainer.py    # TreeExplainer + DeepExplainer, unified interface
-├── explainers/lime_explainer.py    # LimeTabularExplainer wrapper
+├── explainers/shap_explainer.py    # SHAP TreeExplainer + DeepExplainer
+├── explainers/lime_explainer.py    # LimeTabularExplainer
 ├── metrics/rank_correlation.py     # Kendall's tau, normalized share, rank tables
-├── metrics/stability.py            # bootstrap uncertainty on importance/rankings
+├── metrics/stability.py            # measure uncertainty on importance/rankings
 ├── plots/comparison_plots.py       # scatter + grouped bar plotting helpers
 ├── notebooks/full_analysis.ipynb   # example usage
-└── results/                        # saved .npy arrays (gitignored)
 ```
 
 ## Quickstart
